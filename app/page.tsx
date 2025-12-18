@@ -6,6 +6,9 @@ import TypewriterEffect from "@/components/TypewriterEffect";
 import { motion } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
+import SkillSection from "@/components/SkillSection";
+import AchievementSection from "@/components/AchievementSection";
+import Footer from "@/components/Footer";
 
 import Container from "@/components/Container";
 
@@ -91,7 +94,13 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <SkillSection />
+
+        <AchievementSection />
       </Container>
+
+      <Footer />
     </>
   );
 }
