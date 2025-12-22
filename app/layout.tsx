@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Container from "@/components/Container";
 import { Outfit } from "next/font/google";
 import StarBackground from "@/components/StarBackground";
+import SocialSidebar from "@/components/SocialSidebar";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${outfit.className} min-h-screen bg-black text-white antialiased`}>
         <StarBackground />
         <Navbar />
+        <SocialSidebar />
         {children}
       </body>
     </html>

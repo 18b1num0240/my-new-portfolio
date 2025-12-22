@@ -27,34 +27,47 @@ export default function ProjectsPage() {
     }, [activeTab, search]);
 
     return (
-        <Container>
-            <section className="py-10">
-                <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-                    <p className="text-sm text-neutral-400">Work</p>
-                    <h1 className="mt-2 text-4xl font-semibold tracking-tight">Projects</h1>
-                    <p className="mt-3 text-neutral-300 max-w-2xl">
-                        A collection of things I’ve built. You can filter by category and search by keywords.
-                    </p>
+        <main className="min-h-screen pt-24 pb-20">
+            <Container>
+                <section className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/5 p-8 md:p-12 backdrop-blur-xl">
+                    {/* Subtle Gradient Glow */}
+                    <div className="absolute -top-24 -right-24 h-64 w-64 bg-teal-500/10 blur-[100px]" />
 
-                    <ProjectFilters
-                        tabs={tabs}
-                        activeTab={activeTab}
-                        setActiveTab={setActiveTab}
-                        search={search}
-                        setSearch={setSearch}
-                    />
-                </div>
+                    <div className="relative z-10">
+                        <p className="text-sm font-medium tracking-widest text-teal-400 uppercase">Work</p>
+                        <h1 className="mt-2 text-5xl font-bold tracking-tight text-white sm:text-6xl">Projects</h1>
+                        <p className="mt-4 text-neutral-400 max-w-2xl text-lg leading-relaxed">
+                            A collection of things I’ve built. You can filter by category and search by keywords.
+                        </p>
 
-                <div className="mt-10 grid gap-5 sm:grid-cols-2">
+                        <ProjectFilters
+                            tabs={tabs}
+                            activeTab={activeTab}
+                            setActiveTab={setActiveTab}
+                            search={search}
+                            setSearch={setSearch}
+                        />
+                    </div>
+                </section>
+
+                <div className="mt-12 grid gap-8 md:grid-cols-2">
                     {filtered.map((p) => (
                         <ProjectCard key={p.title} p={p} />
                     ))}
                 </div>
 
                 {filtered.length === 0 && (
-                    <p className="mt-10 text-neutral-400">No projects found.</p>
+                    <div className="mt-20 text-center">
+                        <p className="text-neutral-400 text-lg">No projects found matching your criteria.</p>
+                        <button
+                            onClick={() => { setActiveTab("All"); setSearch(""); }}
+                            className="mt-4 text-teal-400 hover:underline"
+                        >
+                            Reset filters
+                        </button>
+                    </div>
                 )}
-            </section>
-        </Container>
+            </Container>
+        </main>
     );
 }

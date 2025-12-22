@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import StarBackground from "@/components/StarBackground";
 import TypewriterEffect from "@/components/TypewriterEffect";
 import { motion } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
@@ -15,7 +14,6 @@ import Container from "@/components/Container";
 export default function Home() {
   return (
     <>
-      <StarBackground />
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 text-center">
         {/* Purple Nebula Glows (Animated) */}
         <motion.div
@@ -81,10 +79,10 @@ export default function Home() {
               <span>SELECTED WORK</span>
             </div>
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Featured Projects
+              Projects
             </h2>
             <p className="mt-4 max-w-2xl text-lg text-neutral-400">
-              Frontend-focused projects where I craft interactive, scalable UI with clean design systems.
+              Projects where I build interactive user interfaces and implement scalable backend APIs with clean, maintainable logic.
             </p>
           </div>
 

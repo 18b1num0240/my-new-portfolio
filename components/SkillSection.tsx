@@ -9,21 +9,20 @@ const skillCategories = [
         icon: "💻",
         years: "4+",
         skills: [
-            { name: "JavaScript", level: 90 },
-            { name: "TypeScript", level: 85 },
-            { name: "Python", level: 88 },
-            { name: "Java", level: 85 },
+            { name: "JavaScript", level: 80 },
+            { name: "Java", level: 50 },
+            { name: "Golang", level: 78 },
+            { name: "PHP", level: 80 },
         ],
     },
     {
         title: "Frontend Development",
         icon: "🎨",
-        years: "4+",
+        years: "3+",
         skills: [
-            { name: "React.js", level: 90 },
-            { name: "Next.js", level: 85 },
-            { name: "Tailwind CSS", level: 88 },
-            { name: "Three.js", level: 75 },
+            { name: "Next.js", level: 50 },
+            { name: "Tailwind CSS", level: 50 },
+            { name: "HTML & CSS", level: 90 },
         ],
     },
     {
@@ -31,12 +30,15 @@ const skillCategories = [
         icon: "⚙️",
         years: "3+",
         skills: [
-            { name: "SupaBase", level: 74 },
-            { name: "MYSQL", level: 83 },
-            { name: "Firebase", level: 90 },
+            { name: "Laravel", level: 70 },
+            { name: "Symfony", level: 80 },
+            { name: "PostgreSQL", level: 82 },
+            { name: "Oracle", level: 70 },
+            { name: "Supabase", level: 75 },
         ],
     },
 ];
+
 
 export default function SkillSection() {
     return (
@@ -66,7 +68,7 @@ export default function SkillSection() {
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: idx * 0.1 }}
-                        className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur block"
+                        className="rounded-3xl border border-white/10 bg-[#0A0A0A] p-8 transition-all hover:bg-[#111111] hover:border-teal-500/30"
                     >
                         <div className="flex items-center justify-between mb-8">
                             <div className="flex items-center gap-3">

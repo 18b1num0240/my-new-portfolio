@@ -36,23 +36,42 @@ export default function Footer() {
                         <h3 className="mb-6 text-sm font-semibold uppercase tracking-wider text-white">Connect</h3>
                         <ul className="space-y-4 text-sm text-neutral-400">
                             <li>
-                                <a href="mailto:contact@example.com" className="flex items-center gap-3 transition hover:text-teal-400">
+                                <a href="mailto:ganerdeneganaa92@gmail.com" className="flex items-center gap-3 transition hover:text-teal-400">
                                     <Mail size={16} />
-                                    Email
+                                    Email: ganerdeneganaa92@gmail.com
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:+1234567890" className="flex items-center gap-3 transition hover:text-teal-400">
+                                <a href="tel:+97689696185" className="flex items-center gap-3 transition hover:text-teal-400">
                                     <Phone size={16} />
-                                    Phone
+                                    Phone: +976 89696185
                                 </a>
                             </li>
-                            <li className="flex gap-4 pt-2">
-                                <a href="https://github.com" target="_blank" rel="noreferrer" className="text-neutral-400 transition hover:text-white">
-                                    <Github size={20} />
+                            <li className="flex gap-4 pt-4">
+                                <a
+                                    href="https://github.com/18b1num0240"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all hover:border-teal-500/50 hover:bg-teal-500/10 hover:shadow-[0_0_15px_rgba(20,184,166,0.3)]"
+                                    aria-label="GitHub"
+                                >
+                                    <Github size={18} className="text-white/70 transition-colors group-hover:text-white" />
                                 </a>
-                                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-neutral-400 transition hover:text-white">
-                                    <Linkedin size={20} />
+                                <a
+                                    href="https://www.linkedin.com/in/ganerdene-ganaa-b1092a25b/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all hover:border-teal-500/50 hover:bg-teal-500/10 hover:shadow-[0_0_15px_rgba(20,184,166,0.3)]"
+                                    aria-label="LinkedIn"
+                                >
+                                    <Linkedin size={18} className="text-white/70 transition-colors group-hover:text-white" />
+                                </a>
+                                <a
+                                    href="mailto:ganerdeneganaa92@gmail.com"
+                                    className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all hover:border-teal-500/50 hover:bg-teal-500/10 hover:shadow-[0_0_15px_rgba(20,184,166,0.3)]"
+                                    aria-label="Email"
+                                >
+                                    <Mail size={18} className="text-white/70 transition-colors group-hover:text-white" />
                                 </a>
                             </li>
                         </ul>
