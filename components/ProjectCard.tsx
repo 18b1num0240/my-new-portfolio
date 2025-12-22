@@ -73,7 +73,7 @@ export default function ProjectCard({ p }: { p: Project }) {
                                 rel="noreferrer"
                                 className="flex items-center gap-2 text-sm font-semibold text-white hover:text-teal-400 transition-colors"
                             >
-                                Live Demo <ExternalLink size={14} />
+                                Visit Site <ExternalLink size={14} />
                             </a>
                         )}
                         {p.github && (
