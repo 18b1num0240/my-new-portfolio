@@ -109,16 +109,6 @@ export default function Navbar() {
                         </AnimatePresence>
                     </div>
                 </div>
-
-                {/* Right Area (Resume Button) */}
-                <div className="hidden lg:flex w-[120px] justify-end">
-                    <button
-                        className="rounded-full border border-teal-500/50 bg-teal-500/10 px-5 py-1.5 text-sm font-semibold text-teal-400 transition-all hover:bg-teal-500 hover:text-black hover:shadow-[0_0_20px_rgba(45,212,191,0.3)]"
-                        onClick={() => window.open('/cv-en.pdf', '_blank')}
-                    >
-                        Resume
-                    </button>
-                </div>
             </div>
         </motion.nav>
     );
