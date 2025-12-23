@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 text-center">
-        {/* Purple Nebula Glows (Animated) */}
+        {/* Dynamic Teal/Emerald Organic Glows */}
         <motion.div
           animate={{
             scale: [1, 1.2, 1],
@@ -27,7 +27,7 @@ export default function Home() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute top-0 left-0 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#85059C] opacity-20 blur-[150px]"
+          className="absolute top-0 left-0 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal-500/10 blur-[120px] pointer-events-none"
         />
         <motion.div
           animate={{
@@ -40,8 +40,11 @@ export default function Home() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute bottom-0 right-0 h-[800px] w-[800px] translate-x-1/2 translate-y-1/2 rounded-full bg-[#85059C] opacity-30 blur-[150px]"
+          className="absolute bottom-0 right-0 h-[600px] w-[600px] translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-500/10 blur-[120px] pointer-events-none"
         />
+
+        {/* Viewport Border Glow */}
+        <div className="fixed inset-0 pointer-events-none z-50 ring-[1px] ring-white/5 shadow-[inset_0_0_100px_rgba(20,184,166,0.05)]" />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -62,7 +65,7 @@ export default function Home() {
           <div className="mt-10">
             <Link
               href="/projects"
-              className="rounded-full bg-teal-500 px-8 py-3 text-lg font-semibold text-black transition hover:bg-teal-400 hover:shadow-[0_0_20px_rgba(45,212,191,0.5)]"
+              className="rounded-full bg-teal-500 px-8 py-3 text-lg font-semibold text-black transition hover:bg-teal-400 hover:shadow-[0_0_30px_rgba(45,212,191,0.4)]"
             >
               View Projects
             </Link>
