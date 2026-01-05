@@ -70,14 +70,14 @@ export default function Navbar() {
 
                     {/* Download CV Dropdown */}
                     <div className="relative" onMouseEnter={() => setCvOpen(true)} onMouseLeave={() => setCvOpen(false)}>
-                        <button
+                        {/* <button
                             className={cn(
                                 "flex items-center gap-1 px-4 py-1.5 text-sm font-medium transition-colors",
                                 cvOpen ? "text-white" : "text-neutral-400 hover:text-white"
                             )}
                         >
                             CV <ChevronDown size={14} className={cn("transition-transform duration-200", cvOpen && "rotate-180")} />
-                        </button>
+                        </button> */}
 
                         <AnimatePresence>
                             {cvOpen && (
